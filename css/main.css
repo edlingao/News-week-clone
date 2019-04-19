@@ -4,6 +4,9 @@
     width: 100%;
     background: red;
 }
+.hidden-nav{
+    display: none;
+}
 .nav-bar-header{
     display: flex;
     width: 100%;
@@ -101,7 +104,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
-    
+    max-height: 300px;
 }
 .image-summary{
     position: absolute;
@@ -139,4 +142,149 @@
     font-weight: 700;
     color: rgba(0, 0, 0, .3);
     text-transform: uppercase;
+}
+.story-middle .image-container{
+    background: url(../images/trump.jpg);
+    max-height: 500px;
+}
+.story-middle{
+    margin-bottom: 0;
+}
+.more-stories{
+    display: grid;
+    grid-template-columns: 4fr 10fr;
+    margin-bottom: 20px;
+    grid-gap: 10px;
+    
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    
+}
+.more-stories-title{
+    margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    margin-bottom: 20px;
+}
+.more-stories-image{
+    background: url(../images/omar.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-top: 2px;
+}
+.more-stories-description h2{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.more-stories-description h2:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+    cursor: pointer;
+}
+.more-stories-description p{
+    font-weight: 200;
+    font-size: .9rem;
+}
+
+.opinion-image{
+    background-image: url(../images/opinion-headshot-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45px 40px;
+    background-color: #f72210;
+    border-radius: 50%;
+    max-height: 90%;
+}
+
+
+.footer-logo{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 30%;
+    font-size: .8rem;
+}
+.footer-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.contact-links{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    color: rgba(0, 0, 0, .6);
+    align-items: center;
+}
+
+.fab:hover{
+    cursor: pointer;
+}
+.fa-facebook-square:hover{
+    color: #04a
+}
+.fa-twitter:hover{
+    color: deepskyblue;
+}
+.fa-instagram:hover{
+	background: linear-gradient(to bottom left, #330867 0% ,  orange 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+}
+.fa-tumblr:hover{
+    color: #06114e;
+}
+.fa-linkedin-in{
+    font-size: 1.8rem;
+}
+.fa-linkedin-in:hover{
+    color: #007094;
+}
+
+.disclaimer-editions{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 3fr repeat(2,1fr);
+}
+.editions a, .disclaimer a{
+    color: gray;
+    font-size: .9rem;
+    padding: 0px 5px;
+    margin: 5px;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.footer-editions{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-weight: 500;
+    font-size: .9rem;
+}
+.editions{
+    grid-area: 1/3;
+    
+}
+
+
+@media (max-width: 1000px){
+    .hidden-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+        padding: 0px 10px;
+        color: white;
+    }
+    .nav-bar-header{
+        display: none;
+    }
+    .nav-bar-items{
+        display: none;
+    }
 }
